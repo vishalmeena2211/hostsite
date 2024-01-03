@@ -1,8 +1,6 @@
-import "./App.css";
-import BlogSection1 from "./Components/BlogSection1";
+// import "./App.css";
 import CardContainer from "./Components/CardContainer";
-import CircularBorderComponent from "./Components/CircularBorderComponent";
-import Header from "./Components/Header";
+import ChatApp from "./Components/ChatApp";
 import Loading from "./Components/Loading";
 import Navbar from "./Components/Navbar";
 import NewsSlider from "./Components/NewsSlider";
@@ -10,8 +8,13 @@ import TabsComponent from "./Components/TabComponent";
 import TabNavs from "./Components/TabNavs1";
 import TextContent1 from "./Components/TextContent1";
 import VideoHeader from "./Components/VideoHeader";
-import VideoSection2 from "./Components/VideoSection2";
+import CardGrid from "./Components/Sahil/CardGrid";
 import { useEffect,useState } from "react";
+import TextContent from "./Components/Sahil/TextContent";
+import AccordionsComponent from "./Components/AccordionsComponent";
+import Footer from "./Components/Footer";
+import EventGrid from "./Components/EventGrid";
+import ImageGrid from "./Components/ImageGrid";
 
 function App() {
 
@@ -34,19 +37,27 @@ function App() {
     {/* Loading screen */}
     {loading && <Loading loading = {loading} />}
       <Navbar/>
-      {/* <Header/> */}
       <VideoHeader/>
-      <VideoSection2/>
-      <TextContent1/>
+      {/* <Header/> */}
+
+      <TextContent/>
+      <EventGrid/>
       <TabsComponent/>
-      <CardContainer/>
-      
-      {/* <TabNavs/> */}
-      {/* <BlogSection1/> */}
+      <CardGrid/>
+      <TextContent1/>
+      <ChatApp/>
+      {/* <CardContainer/> */}
+      <ImageGrid/>
+
+
+
       <NewsSlider/>
-      {/* <CircularBorderComponent/> */}
 
 
+      
+
+      <AccordionsComponent/>
+      <Footer/>
 
 
     </>

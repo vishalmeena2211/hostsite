@@ -13,7 +13,7 @@ const TabsComponent = () => {
       {/* Tabs */}
       <h3 className='text-center text-orange-400 my-5 font-semibold text-sm'>USE CASES</h3>
       <h1 className='text-center my-5 text-6xl'>For visual minds of all kinds.</h1>
-      <div className="flex w-10/12 mx-auto justify-center gap-7">
+      <div className="flex w-10/12 mx-auto justify-center md:gap-5 flex-wrap">
         {[1, 2, 3, 4, 5].map((tabNumber) => (
           <div
             key={tabNumber}

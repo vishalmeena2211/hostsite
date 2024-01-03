@@ -10,7 +10,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
       <div
         className={`${
           isOpen ? 'h-screen' : 'h-0 opacity-0'
-        } md:hidden fixed  z-10 transition-all duration-300 backdrop-blur-xl bg-gradient-to-b from-neutral-50 via-orange-100 to-orange-500  w-screen flex flex-col items-start justify-center gap-10`}
+        } md:hidden fixed  z-30 transition-all duration-300 backdrop-blur-xl bg-gradient-to-b from-neutral-50 via-orange-100 to-orange-500  w-screen flex flex-col items-start justify-center gap-10`}
       >
 
         <div className='flex flex-col justify-between text-4xl pl-3 text-start gap-4'>
@@ -55,7 +55,7 @@ const Navbar = () => {
     
     
 
-    <nav className="bg-gray-400 bg-opacity-50 text-gray-800 backdrop-blur-sm fixed rounded-full text-sm px-3 mt-10 w-10/12 md:w-8/12 mx-auto p-[10px] flex justify-between items-center transform left-[50%] top-[2%] -translate-x-1/2 -translate-y-1/2 z-20">
+    <nav className="bg-gray-400 bg-opacity-50 text-gray-800 backdrop-blur-sm fixed rounded-full text-sm px-3 mt-10 w-10/12 md:w-8/12 mx-auto p-[10px] flex justify-between items-center transform left-[50%] top-[2%] -translate-x-1/2 -translate-y-1/2 z-40">
       {/* Left side */}
       <div className="flex items-center justify-between text-2xl font-semibold">
         <AiOutlineApple className="mr-1" />
